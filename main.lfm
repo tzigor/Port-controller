@@ -1,0 +1,97 @@
+object App: TApp
+  Left = 2201
+  Height = 515
+  Top = -688
+  Width = 320
+  Caption = 'App'
+  ClientHeight = 515
+  ClientWidth = 320
+  OnShow = FormShow
+  LCLVersion = '2.2.4.0'
+  object COMselectCB: TComboBox
+    Left = 16
+    Height = 23
+    Top = 16
+    Width = 100
+    ItemHeight = 15
+    TabOrder = 0
+    Text = 'COMselectCB'
+  end
+  object StartBtn: TButton
+    Left = 120
+    Height = 32
+    Top = 56
+    Width = 99
+    Caption = 'Start'
+    OnClick = StartBtnClick
+    TabOrder = 1
+  end
+  object StopBtn: TButton
+    Left = 120
+    Height = 33
+    Top = 104
+    Width = 99
+    Caption = 'Stop'
+    OnClick = StopBtnClick
+    TabOrder = 2
+  end
+  object Memo1: TMemo
+    Left = 16
+    Height = 202
+    Top = 264
+    Width = 288
+    Lines.Strings = (
+      'Memo1'
+    )
+    TabOrder = 3
+  end
+  object CloseApp: TButton
+    Left = 232
+    Height = 25
+    Top = 480
+    Width = 75
+    Caption = 'Close'
+    OnClick = CloseAppClick
+    TabOrder = 4
+  end
+  object Command: TEdit
+    Left = 16
+    Height = 23
+    Top = 56
+    Width = 80
+    TabOrder = 5
+    Text = 'Command'
+  end
+  object ADCInput: TLabel
+    Left = 136
+    Height = 32
+    Top = 8
+    Width = 103
+    Caption = 'ADCInput'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -24
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object ADCStart: TButton
+    Left = 120
+    Height = 33
+    Top = 160
+    Width = 99
+    Caption = 'ADC Start'
+    OnClick = ADCStartClick
+    TabOrder = 6
+  end
+  object ADCStop: TButton
+    Left = 120
+    Height = 32
+    Top = 200
+    Width = 99
+    Caption = 'ADC Stop'
+    OnClick = ADCStopClick
+    TabOrder = 7
+  end
+end
